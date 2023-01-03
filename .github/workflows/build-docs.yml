@@ -6,9 +6,7 @@ jobs:
   docs:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-    - uses: ammaraskar/sphinx-action@master
-      with:
-        docs-folder: "doc/"
-        pre-build-command: "apt-get --allow-releaseinfo-change update -y && apt-get install -y tox"
-        build-command: "tox -e docs"
+    - run: apt-get --allow-releaseinfo-change update -y && apt-get install -y tox
+    - run: cd doc
+    - run: echo "------------------ Building GOV ---------------------------------------"
+    - run: tox -e docs
