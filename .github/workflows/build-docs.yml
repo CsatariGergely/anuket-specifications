@@ -6,7 +6,10 @@ jobs:
   docs:
     runs-on: ubuntu-latest
     steps:
-    - run: apt-get --allow-releaseinfo-change update -y && apt-get install -y tox
-    - run: cd doc
-    - run: echo "------------------ Building GOV ---------------------------------------"
-    - run: tox -e docs
+    - name: Check out repository code
+      uses: actions/checkout@v3
+    - run: | 
+        sudo apt-get --allow-releaseinfo-change update -y && sudo apt-get install -y tox
+        cd doc
+        echo "------------------ Building GOV ---------------------------------------"
+        tox -e docs
