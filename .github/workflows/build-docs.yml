@@ -18,7 +18,7 @@ jobs:
         echo "---------------------------------- Building GOV ---------------------------------------"
         echo "---------------------------------------------------------------------------------------"
         tox -e docs
-        echo "Building GOV was succesfull! :rocket:"
+        echo "Building GOV was succesfull! "
         cd -
     - name: Building RM
       run: |
@@ -27,7 +27,7 @@ jobs:
         echo "---------------------------------- Building RM ----------------------------------------"
         echo "---------------------------------------------------------------------------------------"
         tox -e docs
-        echo "Building RM was succesfull! :rocket:"
+        echo "Building RM was succesfull! "
         cd -
     - name: Buiding RA1 and RC1
       run: |
@@ -36,7 +36,7 @@ jobs:
         echo "---------------------------------- Building RA1 and RC1 -------------------------------"
         echo "---------------------------------------------------------------------------------------"
         tox -e docs
-        echo "Building RA1 and RC1 was succesfull! :rocket:"
+        echo "Building RA1 and RC1 was succesfull! "
         cd - 
     - name: Building RA2
       run: |
@@ -45,7 +45,7 @@ jobs:
         echo "---------------------------------- Building RA2 ---------------------------------------"
         echo "---------------------------------------------------------------------------------------"
         tox -e docs
-        echo "Building RA2 was succesfull! :rocket:"
+        echo "Building RA2 was succesfull! "
         cd -
     - name: Building RI1
       run: |
@@ -54,7 +54,7 @@ jobs:
         echo "---------------------------------- Building RI1 ---------------------------------------"
         echo "---------------------------------------------------------------------------------------"
         tox -e docs
-        echo "Building RI1 was succesfull! :rocket:"
+        echo "Building RI1 was succesfull! "
         cd -
     - name: Building RI2
       run: |
@@ -63,7 +63,7 @@ jobs:
         echo "---------------------------------- Building RI2 ---------------------------------------"
         echo "---------------------------------------------------------------------------------------"
         tox -e docs
-        echo "Building RI2 was succesfull! :rocket:"
+        echo "Building RI2 was succesfull! "
         cd -
     - name: Building RC2
       run: |
@@ -72,7 +72,7 @@ jobs:
         echo "---------------------------------- Building RC2 ---------------------------------------"
         echo "---------------------------------------------------------------------------------------"
         tox -e docs
-        echo "Building RC2 was succesfull! :rocket:"
+        echo "Building RC2 was succesfull! "
         cd -
 
 
