@@ -8,9 +8,11 @@ jobs:
     steps:
     - name: Check out repository code
       uses: actions/checkout@v3
-    - run: | 
+    - name: Install prerequisites
+      run: | 
         sudo apt-get --allow-releaseinfo-change update -y && sudo apt-get install -y tox
-    - run: |
+    - name: Building GOV and common
+      run: |
         cd doc
         echo "---------------------------------------------------------------------------------------"
         echo "---------------------------------- Building GOV ---------------------------------------"
